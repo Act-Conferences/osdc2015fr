@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
+
+<head>
+<!-- Document Metadata -->
+<meta http-equiv="Content-Language" content="[% global.request.language %]" />
+<!-- OpenId -->
+[% IF openid %]
+<link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
+[% END %]
+<!-- Atom news feed -->
+<link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
+      href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
+<title>[% global.conference.name %][%- IF title -%] :: [% title %][%- END -%]</title>
+
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" />
+<link rel="stylesheet" type="text/css" href="/css/schedule.css" />
+
+<!-- JavaScript sugar -->
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/act.js"></script>
+
+<!-- Favorite icon -->
+<link rel="shortcut icon" type="image/png" href="[% make_uri_info('css', 'favicon.png') %]" />
+</head>
+
+<body>
+
+<div id="top">
+
+  <div id="header">
+    <a href="[% make_uri_info() %]">Open Source Developers' Conference / France 2014</a>
+  </div>
+
+  <div id="social-networks">
+    <a href="http://twitter.com/osdcfr"><img class="icon" 
+       src="[% make_uri_info('img', 'blogging.twitter.png') %]" alt="twitter"/></a> |
+    <a href="http://identi.ca/osdcfr"><img class="icon" 
+       src="[% make_uri_info('img', 'blogging.identica.png') %]" alt="identi.ca"/></a>
+  </div>
+
+</div>
+
+<div id="middle">
+
+  <div id="verticalmenu">
+
+    <div id="usersmenu">
+      [% PROCESS usersmenu %]
+    </div>
+
+    <div id="usersmenu">
+      [% PROCESS contentmenu %]
+    </div>
+
+    <div id="usersmenu">
+      [% PROCESS adminmenu %]
+    </div>
+
+    <div id="additionalmenu">
+      [% PROCESS additionalmenu %]
+    </div>
+
+    <div id="endmenu">
+      [% PROCESS endmenu %]
+    </div>
+
+  </div>
+
+  <div id="mainmenu">
+    [% PROCESS mainmenu %]
+  </div>
+
+  <div id="core">
+
+    <div id="content">
+      [% content %]
+    </div>
+
+  </div>
+
+</div>
+
+<div id="bottom">
+
+  <div id="footer">
+    Copyright &copy; 2013 by OSDC.fr - Powered by <a href="http://act.mongueurs.net/">Act</a>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+[% WRAPPER ui %]
+
+<h1>
+<t><fr>Conférence gratuite et ouverte à tous</fr>
+<en>A Free Conference Open To All</en></t>
+</h1>
+
+<div class="topcontent">
+
+<img class="left" src="[% make_uri_info('img','french.conference.png') %]" alt="french conference"/>
+
+<p>
+<t>
+<fr>
+Le <b>22 novembre</b>, les associations 
+les <a href="http://www.mongueurs.net/">Mongueurs de Perl</a>,
+l'<a href="http://www.afpy.org/">AFPy (Association Francophone Python)</a>,
+<a href="http://www.rubyfrance.org/">Ruby France</a>, 
+l'<a href="http://www.esug.org/">European Smalltalk User Group</a> et
+l'<a href="http://afup.org/">Association Française des Utilisateurs de PHP</a>.
+ organisent la 6<sup>e</sup> <b>Open Source Developers Conference France</b>.
+</fr>
+<en>
+<a href="http://www.mongueurs.net/">Mongueurs de Perl</a>,
+<a href="http://www.afpy.org/">AFPy (Association Francophone Python)</a>,
+<a href="http://www.rubyfrance.org/">Ruby France</a>, and <a href="http://www.esug.org/">
+European Smalltalk User Group</a>
+invite you on <b>November 22<sup>nd</sup></b> for the 
+6<sup>th</sup> <b>Open Source Developers Conference France</b>.
+</en>
+</t>
+</p>
+
+<p>
+<t>
+<fr>
+Cette conférence se tiendra à Paris au 
+<a href="http://www.cite-sciences.fr/fr/carrefour-numerique/" target="_carrefournum2">Carrefour Numérique²</a>
+de la
+<a href="http://www.cite-sciences.fr/fr/accueil/" target="_carrefournum2">Cité des Sciences et de l'Industrie</a>.
+</fr>
+<en>
+The conference will be held in Paris, at 
+<a href="http://www.cite-sciences.fr/en/carrefour-numerique/" target="_carrefournum2">Carrefour Numérique²</a>
+of the 
+<a href="http://www.cite-sciences.fr/en/home/" target="_carrefournum2">Cité des Sciences et de l'Industrie</a>.
+</en>
+</t>
+</p>
+
+<p><b>
+<t>
+<fr>
+Entrée libre et gratuite&nbsp;!
+</fr>
+<en>
+Entrance is free and open to all!
+</en>
+</t></b>
+</p>
+
+<hr/>
+
+</div>
+
+<h2><t>
+  <fr>Présentation de OSDC.fr</fr>
+  <en>What is OSDC.fr?</en>
+</t></h2>
+
+<div class="litcontent">
+
+<p><t>
+  <fr>L'objectif d'OSDC.fr est de rassembler les développeurs
+  francophones de différentes communautés autour des technologies
+  innovantes de la programmation...
+  <a href="[% make_uri('presentation.html') %]">Plus de détails ici...</a></fr>
+
+  <en>The goal of OSDC.fr is to gather French-speaking developers
+  from different communities around innovative technologies...
+  <a href="[% make_uri('presentation.html') %]">More details here...</a></en>
+</t></p>
+
+</div>
+
+<h2><t><fr>Restez inform&eacute;</fr><en>Keep in touch</en></t></h2>
+
+<div class="subcontent">
+
+<p>
+  <t>
+    <fr>
+       Vous pouvez vous abonner au <a href="[%
+       global.request.base_url %][% make_uri_info( 'atom',
+       global.request.language ) %].xml">flux<img class="icon" src="[% make_uri_info('img','feed.png') %]" alt="feed"/></a>.
+    </fr>
+    <en>
+       Watch this space for updates, or check the <a href="[%
+       global.request.base_url %][% make_uri_info( 'atom',
+       global.request.language ) %].xml">feed<img class="icon" src="[% make_uri_info('img','feed.png') %]" alt="feed"/></a>.
+    </en>
+  </t>
+</p>
+
+</div>
+
+[% news = global.news(3);
+   IF news.size > 2;
+     more = news.pop;
+   END;
+ %]
+
+[% IF news.size %]
+<h2><t><fr>Dernières infos</fr>
+<en>Latest news</en>
+</t></h2>
+<div class="subcontent">
+[% FOREACH item = news %]
+<div class="news-entry">
+ <h3 class="news-header">
+  <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+  <span class="news-title">[% item.title %]</span>
+ </h3>
+ <div class="news-text">
+  [% item.content %]
+ </div>
+</div>
+[% END %]
+
+[% IF more %]
+<p><t><fr><a href="[% make_uri('news') %]" class="news-link">Toutes les infos</a></fr>
+<en><a href="[% make_uri('news') %]" class="news-link">All the news</a></en>
+</t></p>
+[% END %]
+</div>
+[% END %]
+
+[% END %]

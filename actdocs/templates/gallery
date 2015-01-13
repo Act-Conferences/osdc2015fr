@@ -1,0 +1,47 @@
+[% FILTER collapse %]
+<div class="submenu">
+<iframe src="http://www.facebook.com/plugins/likebox.php?id=113881401994946&amp;width=292&amp;connections=0&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe>
+<p>
+  <t>
+    <fr>
+      Vous pouvez nous suivre sur&nbsp;:
+    </fr>
+    <en>
+      You can follow us on:
+    </en>
+  </t>
+  |<a href="http://twitter.com/osdcfr"><img class="icon" src="[% make_uri_info('img', 'blogging.twitter.png') %]" alt="twitter"/></a> |
+  <a href="http://identi.ca/osdcfr"><img class="icon" src="[% make_uri_info('img', 'blogging.identica.png') %]" alt="identi.ca"/></a> |
+</p>
+
+  [% isponsors = [] %]
+  [% BLOCK isponsor %]
+    [% WRAPPER menus/section %]
+    <p><a class="icon" href="[% url %]"><img class="icon" src="[% make_uri('img')%]/[% img %]" 
+        alt="[% name %]" title="[% name %]" /></a></p>
+    [% END %]
+  [% END %]
+
+  [% WRAPPER isponsor
+  img = 'logo.owf.small.png'
+  name = "Open World Forum"
+  url = 'http://www.openworldforum.org/'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsor
+  img = 'logo.oreilly.small.png'
+  name = "O'Reilly"
+  url = 'http://www.oreilly.com/'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsor
+  img = 'logo.linuxmag.small.png'
+  name = 'GNU/Linux Magazine France'
+  url = 'http://www.gnulinuxmag.com/'
+  %]
+  [% END %]
+
+</div>
+[% END %]

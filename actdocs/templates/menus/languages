@@ -1,0 +1,12 @@
+[% WRAPPER menus/igroup %]
+  [% WRAPPER menus/item %]
+  <a href="?language=en">
+    &#x2192;&nbsp; <img class="icon" src="[% make_uri_info('img', 'uk.png') %]" alt="en"/> English
+  </a>
+  [% END %]
+  [% WRAPPER menus/item %]
+  <a href="?language=fr">
+    &#x2192;&nbsp; <img class="icon" src="[% make_uri_info('img', 'fr.png') %]" alt="fr"/> Français
+  </a>
+  [% END %]
+[% END %]

@@ -1,0 +1,15 @@
+<!-- money menu -->
+[% WRAPPER menus/section %]
+{{Treasurer}}
+[% END %]
+[% WRAPPER menus/igroup %]
+  [% WRAPPER menus/item %]
+  <a href="[% make_uri('payments') %]">{{Payments}}</a>
+  [% END %]
+  [% WRAPPER menus/item %]
+  <a href="[% make_uri('csv/payments') %]">{{Payments}} (CSV)</a>
+  [% END %]
+  [% WRAPPER menus/item %]
+  <a href="[% make_uri('csv/payment_items') %]">{{Payment Details}} (CSV)</a>
+  [% END %]
+[% END %]

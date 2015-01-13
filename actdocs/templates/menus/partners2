@@ -1,0 +1,44 @@
+[% isponsors = [] %]
+[% BLOCK isponsor %]
+  [% WRAPPER menus/section %]
+  <p><a class="icon" href="[% url %]"><img class="icon" src="[% make_uri('img')%]/[% img %]" 
+      alt="[% name %]" title="[% name %]" /></a></p>
+  [% END %]
+[% END %]
+
+[% WRAPPER menus/section %]
+
+  [% WRAPPER isponsor
+  img = 'logoCite-70.png'   
+  name = "Carrefour Num\xc3\xa9rique\xc2\xb2"
+  url = 'http://www.cite-sciences.fr/fr/au-programme/lieux-ressources/carrefour-numerique2/'
+  %][% END %]
+
+[% END %]
+
+
+[% WRAPPER menus/igroup %]
+  [% WRAPPER menus/item %]
+
+  [% WRAPPER isponsor
+  img = 'logo.oreilly.small.png'
+  name = "O'Reilly"
+  url = 'http://www.oreilly.com/'
+  %][% END %]
+
+  [% END %]
+[% END %]
+
+
+[% WRAPPER menus/igroup %]
+  [% WRAPPER menus/item %]
+
+  [% WRAPPER isponsor
+  img = 'logo.linuxmag.small.png'
+  name = 'GNU/Linux Magazine France'
+  url = 'http://www.gnulinuxmag.com/'
+  %][% END %]
+
+  [% END %]
+[% END %]
+

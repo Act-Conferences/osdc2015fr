@@ -1,0 +1,339 @@
+body {
+	margin: 0px;
+	background: white;
+	color: black;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+img {
+	margin: 10px;
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0px 10px 5px 0px;
+}
+
+img.right {
+	float: right;
+	margin: 0px 0px 5px 10px;
+}
+
+img.icon {
+	margin: 1px;
+	vertical-align: middle;
+}
+
+a:link,
+a:visited {
+	color: #8E06FF;
+	text-decoration: none;
+}
+
+a:link:hover,
+a:visited:hover {
+	color: #CB06FF;
+	text-decoration: none;
+}
+
+a.left {
+	display: block;
+	float: left;
+	margin: 0px 10px 5px 0px;
+	padding: 0px;
+}
+
+a.right {
+	display: block;
+	float: right;
+	margin: 0px 0px 5px 10px;
+	padding: 0px;
+}
+
+a.icon {
+	padding: 0px;
+}
+
+#top {
+	clear: both;
+	margin: 0px 0px 25px 0px;
+	height: 130px;
+	background: white url(frieze.bg.png) repeat-x scroll left top;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#social-networks {
+	float: right;
+	padding-right: 4%;
+}
+
+#header {
+	margin: 0px;
+	padding: 0px;
+	background: transparent;
+}
+
+#header a {
+	display: block;
+	margin: 0px 8%;
+	padding: 90px 0px 0px 350px;
+	height: 40px;
+	background: transparent url(../img/logo_osdcfr2014.png) no-repeat scroll left top;
+	/*background: transparent url(logo.png) no-repeat scroll left top;*/
+}
+
+#header a:link,
+#header a:visited {
+	color: black;
+	outline: none;
+	text-decoration: none;
+}
+
+#header a:link:hover,
+#header a:visited:hover {
+	color: #CB06FF;
+	outline: none;
+	text-decoration: none;
+}
+
+#middle {
+	clear: both;
+	margin: 0px 4%;
+}
+
+.submenu,
+.subsubmenu {
+	margin: 0px;
+	padding: 0px;
+}
+
+.submenu h2 {
+	margin: 0px 0px 1px 0px;
+	padding: 1px;
+	font-size: 110%;
+}
+
+.submenu h3 {
+	margin: 8px 0px 0px 8px;
+	padding: 1px;
+	font-size: 100%;
+}
+
+.submenu ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.submenu li {
+	margin: 0px 0px 0px 15px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#mainmenu {
+	float: left;
+	margin: 0px
+	padding: 0px;
+	width: 80%;
+	font-size: 90%;
+}
+
+#mainmenu .submenu {
+	float: left;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 8px 0px 8px;
+	max-width: 25%;
+	border-left: 1px solid #CCCCCC;
+}
+
+#mainmenu .submenu.first {
+	padding-left: 0px;
+	border-left: none; 
+}
+
+#mainmenu .submenu.double {
+	max-width: 50%;
+}
+
+#mainmenu .submenu ul {
+	float: left;
+}
+
+#verticalmenu {
+	float: left;
+	margin: 0px 2% 0px 0px;
+	padding: 0px;
+	width: 18%;
+	font-size: 90%;
+}
+
+#usersmenu {
+	float: left;
+	width: 100%;
+}
+
+#usersmenu .submenu {
+	float: left;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 20px 0px 0px;
+	width: 100%;
+}
+
+#additionalmenu {
+	float: left;
+	width: 100%;
+}
+
+#additionalmenu .submenu {
+	float: left;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 20px 0px 0px;
+	width: 100%;
+}
+
+#endmenu {
+	float: left;
+	width: 100%;
+}
+
+#endmenu .submenu {
+	float: left;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 20px 0px 0px;
+	width: 100%;
+}
+
+#core {
+	float: right;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	width: 80%;
+}
+
+#gallery {
+	float: right;
+	width: 20%;
+}
+
+#gallery .submenu {
+	float: left;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	width: 100%;
+}
+
+#content {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	text-align: justify;
+}
+
+#content h1,
+#content h2,
+#content h3 {
+	clear: both;
+	text-align: left;
+}
+
+#content .topcontent,
+#content .litcontent,
+#content .subcontent {
+	clear: both;
+}
+
+#content .topcontent {
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #CCCCCC;
+}
+
+#content .litcontent {
+	padding: 0px 10px 5px 10px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#content .subcontent {
+	padding: 0px 10px 0px 10px;
+}
+
+#content hr {
+	border: 1px solid #CCCCCC;
+}
+
+#content .topcontent hr,
+#content .litcontent hr,
+#content .subcontent hr {
+	display: hidden;
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+#content table[border="1"] {
+	border: 1px solid #CCCCCC;
+	border-collapse: collapse;
+}
+
+#content table[border="1"] > tr > th,
+#content table[border="1"] > tr > td {
+	border: 1px solid #CCCCCC;
+}
+
+#content fieldset {
+	border: 1px solid #CCCCCC;
+}
+
+#content input,
+#content select,
+#content textarea {
+	margin: 3px;
+	border: 1px solid #CCCCCC;
+}
+
+#content input[type="text"],
+#content input[type="password"],
+#content textarea {
+	background-color: #F9F9F9;
+}
+
+#content input[type="text"]:hover,
+#content input[type="password"]:hover,
+#content textarea:hover {
+	background-color: #FBFBFB;
+}
+
+#content input[type="text"]:focus,
+#content input[type="password"]:focus,
+#content textarea:focus {
+	background-color: white;
+}
+
+#content input[type="submit"],
+#content input[type="reset"],
+#content input[type="button"] {
+	background-color: #EAEAEA;
+}
+
+#content input[type="submit"]:hover,
+#content input[type="reset"]:hover,
+#content input[type="button"]:hover {
+	background-color: #F8F8F8;
+}
+
+#bottom {
+	clear: both;
+	margin: 5px 0px 0px 0px;
+	height: 60px;
+	background: white url(frieze.bg.png) repeat-x scroll left top;
+	border-top: 1px solid #CCCCCC;
+}
+
+#footer {
+	margin: 0px 8%;
+	padding: 5px 0px 0px 0px;
+	font-size: 80%;
+	text-align: left;
+}

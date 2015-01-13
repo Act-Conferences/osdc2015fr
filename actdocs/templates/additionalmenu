@@ -1,0 +1,26 @@
+[% FILTER collapse %]
+<div class="submenu">
+  [% WRAPPER menus/section %]
+  <t>
+    <en>Useful links</en>
+    <fr>Liens utiles</fr>
+  </t>
+  [% END %]
+  [% WRAPPER menus/igroup %]
+    [% SWITCH global.request.language %]
+    [% CASE 'en' %]
+      [% WRAPPER menus/item %]
+      <a href="http://www.ratp.info/touristes/index.php?langue=en">
+        Move in Paris (RATP)
+      </a>
+      [% END %]
+    [% CASE 'fr' %]
+      [% WRAPPER menus/item %]
+      <a href="http://www.ratp.fr/">
+        Se déplacer à Paris (RATP)
+      </a>
+      [% END %]
+    [% END %]
+  [% END %]
+</div>
+[% END %]

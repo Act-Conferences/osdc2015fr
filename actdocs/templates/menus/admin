@@ -1,0 +1,74 @@
+<!-- admin menu -->
+[% WRAPPER menus/section %]
+{{Admin}}
+[% END %]
+[% IF global.request.user.is_admin %]
+  <div class="subsubmenu">
+    [% WRAPPER menus/subsection %]
+    {{Users}}
+    [% END %]
+    [% WRAPPER menus/igroup %]
+      [% WRAPPER menus/item %]
+      <a href="[% make_uri('rights') %]">
+        {{Rights management}}
+      </a>
+      [% END %]
+    [% END %]
+  </div>
+[% END %]
+[% IF global.request.user.is_news_admin %]
+  <div class="subsubmenu">
+    [% WRAPPER menus/subsection %]
+    <a href="[% make_uri('news') %]">
+      {{News}}
+    </a>
+    [% END %]
+    [% WRAPPER menus/igroup %]
+      [% WRAPPER menus/item %]
+      <a href="[% make_uri('newsadmin') %]">
+        {{News Administration}}
+      </a>
+      [% END %]
+    [% END %]
+  </div>
+[% END %]
+[% IF global.request.user.is_talks_admin %]
+  <div class="subsubmenu">
+    [% WRAPPER menus/subsection %]
+    <a href="[% make_uri('talks') %]">
+      {{Presentations}}
+    </a>
+    [% END %]
+    [% WRAPPER menus/igroup %]
+      [% WRAPPER menus/item %]
+      <a href="[% make_uri('tracks') %]">
+        {{Tracks}}
+      </a>
+      [% END %]
+      [% WRAPPER menus/item %]
+      <a href="[% make_uri('ical_import') %]">
+        {{iCal import}}
+      </a>
+      [% END %]
+      [% WRAPPER menus/item %]
+      <a href="[% make_uri('export_talks') %]">
+        {{CSV export}}
+      </a>
+      [% END %]
+    [% END %]
+  </div>
+  <div class="subsubmenu">
+    [% WRAPPER menus/subsection %]
+    <a href="[% make_uri('events') %]">
+      {{Events}}
+    </a>
+    [% END %]
+    [% WRAPPER menus/igroup %]
+      [% WRAPPER menus/item %]
+      <a href="[% make_uri('newevent') %]">
+        {{Submit a new event}}
+      </a>
+      [% END %]
+    [% END %]
+  </div>
+[% END %]

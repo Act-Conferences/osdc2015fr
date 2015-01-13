@@ -1,0 +1,5 @@
+[% FILTER collapse %]
+<div class="submenu">
+  [% PROCESS menus/partners2 %]
+</div>
+[% END %]

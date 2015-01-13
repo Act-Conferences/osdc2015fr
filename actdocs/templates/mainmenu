@@ -1,0 +1,11 @@
+[% FILTER collapse %]
+<div class="submenu first">
+  [% PROCESS menus/news %]
+</div>
+<div class="submenu">
+  [% PROCESS menus/wiki %]
+</div>
+<div class="submenu double">
+  [% PROCESS menus/talks %]
+</div>
+[% END %]

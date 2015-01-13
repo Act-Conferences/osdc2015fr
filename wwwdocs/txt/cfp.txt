@@ -1,0 +1,48 @@
+_____________________________________________________________________________
+                           Appel à Participations
+            6ème Open Source Developer Conference France (OSDC.fr) 
+                 Cité des Sciences, Paris, 22 novembre 2014
+                              http://osdc.fr/
+_____________________________________________________________________________
+
+L'objectif d'OSDC.fr est de rassembler les développeurs francophones de 
+différentes communautés autour des technologies innovantes de la programmation. 
+
+OSDC.fr s'inspire d'initiatives similaires à l'étranger visant à regrouper
+des personnes d'horizons informatiques différents autour des innovations dans
+le domaine de la programmation. Pour initier la première édition de cette
+conférence en France, nous vous proposons d'abord de réunir les communautés 
+autour de la programmation open source innovante inspirée par les langages 
+libres tels que Perl, Python et Ruby.
+
+Le but est clairement d'apprendre, de voir ce que les autres font afin d'en 
+profiter, car il y a souvent à apprendre des autres en terme de concepts ou 
+de techniques non intrinsèquement liés à un langage particulier (on peut
+citer de nombreux exemples).
+
+Pour cela, nous vous invitons à participer a OSDC.fr, soit en proposant
+des présentations ( http://act.osdc.fr/osdc2014fr/newtalk ), soit
+simplement en nous rejoignant le 22 novembre 2014 à la Cité des
+Sciences. L'entrée est libre et gratuite.
+
+Les présentations durent 20, 40 ou 120 minutes. Il y aura aussi des
+présentations éclair dont la durée st limitée à 5 minutes (par présentation).
+
+Voici une liste (non exhaustive) de thèmes possibles :
+- Les thématiques liées à la programmation dans des langages tels que 
+  Python, Perl, Ruby, Erlang, JavaScript, Scala, Groovy, Haskell, C, C++, 
+  SmallTalk, Java, etc.
+- La compilation dynamique
+- Les interpréteurs et machines virtuelles (Parrot, JVM, CLR, etc)
+- Les outils de développement
+- Les méthodologies de développement
+- Les retours d'expérience en programmation
+- Les bibliothèques
+
+
+
+Dates importantes :
+ <> Date limite pour proposer une présentation  17 novembre 2014
+ <> Programme final                             19 novembre 2014
+ <> Conférence OSDC.fr                          22 novembre 2014
+

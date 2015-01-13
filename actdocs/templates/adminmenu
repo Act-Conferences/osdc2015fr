@@ -1,0 +1,12 @@
+[% FILTER collapse %]
+[% IF global.request.user.is_admin OR global.request.user.is_talks_admin OR global.request.user.is_news_admin %]
+<div class="submenu">
+  [% PROCESS menus/admin %]
+</div>
+[% END %]
+[% IF global.request.user.is_treasurer %]
+<div class="submenu">
+  [% PROCESS menus/treasurer %]
+</div>
+[% END %]
+[% END %]

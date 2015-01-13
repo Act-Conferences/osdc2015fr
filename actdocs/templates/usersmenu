@@ -1,0 +1,11 @@
+[% FILTER collapse %]
+<div class="submenu">
+  [% PROCESS menus/languages %]
+</div>
+<div class="submenu">
+  [% PROCESS menus/user %]
+</div>
+<div class="submenu">
+  [% PROCESS menus/users %]
+</div>
+[% END %]

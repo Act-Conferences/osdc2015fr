@@ -1,0 +1,410 @@
+[% WRAPPER ui title = global.conference.name %]
+<h2>
+<t><fr>Nos sponsors</fr><en>Our sponsors</en></t>
+</h2>
+
+<div class="topcontent">
+  <p>
+    <t>
+      <fr>Nous sommes à la recherche de sponsors.<br />
+        <a href="sponsorship.html">Consultez cette page pour savoir comment le devenir&nbsp;!</a></fr>
+      <en>We are looking for sponsors.<br />
+        <a href="sponsorship.html">Check this page to learn how to become one!</a></en>
+    </t>
+  </p> 
+	<!--
+  <p>
+    <t>
+      <fr>Merci aux entreprises qui nous aident à préparer OSDC.fr 2009</fr>
+      <en>We want to thank the companies that help us make OSDC.fr 2009</en> 
+    </t>
+  </p>
+  -->
+</div>
+
+[% sponsors = [] %]
+[% BLOCK sponsor %]
+[% url_show = url_show || url %]
+<div class="litcontent">
+  <a name="[% lnk %]"></a>
+  <h3>
+    [% name %]
+  </h3>
+  <a class="left" href="[% url %]"><img class="icon" src="[% make_uri('img')%]/[% img %]" alt="[% name %]" title="[% name %]" /></a>
+  <p>
+    [% content %]
+  </p>
+  <p><a href="[% url %]">&nbsp;&nbsp;»&nbsp;[% url_show %]</a></p>
+  <hr/>
+</div>
+[% END %]
+
+<h2><t><fr>Partenaires</fr><en>Partners</en></t></h2>
+
+[% WRAPPER sponsor
+img = 'logo.citesciences.large.png'
+name = "Cité des Sciences et de l'Industrie"
+url = 'http://www.cite-sciences.fr/'
+lnk = 'cite-sciences'
+%]
+<t>
+  <fr>
+    <p>
+    Le Carrefour Numérique est un lieu de découverte, d'apprentissage et 
+    d'initiation aux technologies de l'information et de la communication 
+    au sein de la Cité des Sciences.
+    </p>
+    <p>
+    “Cité” dans la cité, la Cité des Sciences et de l'Industrie regroupe 
+    un grand nombre d’activités mêlant le meilleur de la culture scientifique 
+    et du loisir culturel&nbsp;: expositions, bibliothèque, conférences et débats, 
+    médiation culturelle, traitement de l’actualité, espaces ressources ou 
+    de services et une offre exceptionnelle pour les enfants.<br />
+    Depuis sa création, la Cité n’a cessé de faire le lien entre la science 
+    et les grands débats de société en mettant en lumière les questions que 
+    suscitent progrès technique et innovation&nbsp;: questions environnementales, 
+    géo-économiques, éthiques.<br />
+    Pour illustrer ce lien, les équipes de la Cité proposent dans ses différents 
+    espaces des ateliers, jeux scientifiques, débats et conférences sur les 
+    enjeux contemporains.
+    </p>
+    <p>
+    Construit sur les spécificités et les identités propres du Palais de la 
+    découverte et de la Cité des sciences et de l’industrie, universcience 
+    reflète l’ambition d’un grand centre de science ancré dans le XXIe siècle.
+    </p>
+  </fr>
+  <en>
+    <p>
+    Le Carrefour Numérique est un lieu de découverte, d'apprentissage et 
+    d'initiation aux technologies de l'information et de la communication 
+    au sein de la Cité des Sciences.
+    </p>
+    <p>
+    “Cité” dans la cité, la Cité des Sciences et de l'Industrie regroupe 
+    un grand nombre d’activités mêlant le meilleur de la culture scientifique 
+    et du loisir culturel&nbsp;: expositions, bibliothèque, conférences et débats, 
+    médiation culturelle, traitement de l’actualité, espaces ressources ou 
+    de services et une offre exceptionnelle pour les enfants.<br />
+    Depuis sa création, la Cité n’a cessé de faire le lien entre la science 
+    et les grands débats de société en mettant en lumière les questions que 
+    suscitent progrès technique et innovation&nbsp;: questions environnementales, 
+    géo-économiques, éthiques.<br />
+    Pour illustrer ce lien, les équipes de la Cité proposent dans ses différents 
+    espaces des ateliers, jeux scientifiques, débats et conférences sur les 
+    enjeux contemporains.
+    </p>
+    <p>
+    Construit sur les spécificités et les identités propres du Palais de la 
+    découverte et de la Cité des sciences et de l’industrie, universcience 
+    reflète l’ambition d’un grand centre de science ancré dans le XXIe siècle.
+    </p>
+  </en>
+</t> 
+[% END %]
+
+<h2><t><fr>Sponsors "Full"</fr><en>Sponsor "Full"</en></t></h2>
+
+[% WRAPPER sponsor
+img = 'logo.weborama.large.jpg'
+name = 'weborama'
+url = 'http://weborama.com/'
+lnk = 'weborama'
+%]
+<t>
+  <fr>
+<p>
+Créé en 1998, weborama est un des pionniers des technologies de marketing 
+online en Europe. La société développe ses propres outils de mesure 
+d'audience, de diffusion de publicité (adserving) et de ciblage 
+comportemental  afin d'optimiser la performance  des campagnes de ses 
+clients. Un accent particulier est apporté au respect de la vie privée des 
+internautes et toutes les données collectées pour les besoins des produits 
+sont anonymes.
+</p>
+<p>
+Le c&oelig;ur des produits de la société (la phase de récolte et de consolidation 
+de données) repose sur une architecture basée sur des logiciels libres et 
+plus particulièrement sur le langage Perl. Plusieurs des interfaces web des 
+produits sont réalisées avec le framework Ruby on Rails. L’architecture de 
+la plateforme technique qui s'articule autour du serveur web Apache, du 
+moteur de base de données MySQL et du système d'exploitation Linux.
+</p>
+<p>
+weborama construit tous ses produits autour des logiciels libres et reste 
+toujours à l'écoute du monde open-source et de ses acteurs.
+</p>
+  </fr>
+  <en>
+<p>
+Founded in 1998, weborama is one of Europe’s pioneers in online Marketing
+technologies. The company develops its own audience measurement, adserving
+and behavioral targeting tools in order to optimize its clients’ campaigns’ 
+performances. weborama also pays special attention to web users’ privacy 
+and therefore all the data collected is anonymous.
+</p>
+<p>
+The heart of the company’s products (data collection and consolidation) 
+is built on an architecture hinged on free software systems and in 
+particular the Perl programming language. Several among the products’ web 
+interfaces are created using the Ruby on Rails framework. The technical 
+platform’s architecture is based on Apache web server, MySQL database 
+engine and Linux operating system.
+</p>
+<p>
+weborama builds all of its products with free software programs and stays 
+up-to-date concerning the open-source market and its actors.
+</p>
+  </en>
+</t> 
+[% END %]
+
+[% WRAPPER sponsor
+img = 'logo.cincom.large.jpg'
+name = 'Cincom'
+url = 'http://www.cincomsmalltalk.com/'
+lnk = 'cincom'
+%]
+<t>
+  <fr>
+    <p><b>Respectez les délais et le budget impartis au développement de vos 
+    applications</b></p>
+    <p>
+      Langage de développement orienté objet, Cincom Smalltalk vous permet de 
+      créer et maintenir des applications métier portables et multi 
+      plateformes – et ce tant dans des environnements client/serveur que 
+      pour des applications web capables de monter en puissance en fonction 
+      de vos besoins.
+    </p>
+    <p>
+      L’efficacité de Cincom Smalltalk est un atout tant tactique que 
+      stratégique par rapport à des développements utilisant des langages 
+      concurrents. Il vous apporte une productivité sans pareille et vous 
+      permet de respecter tant les délais que le budget qui vous avaient 
+      été alloués.
+    </p>
+    <p>
+      Facile à apprendre et à utiliser, Cincom Smalltalk simplifie le 
+      développement des applications et vous aide à dégager une valeur 
+      ajoutée, faire des économies et obtenir un retour sur investissement 
+      rapide tout en minimisant les risques.
+    </p>
+
+    <p><b>A propos de Cincom</b><br />
+      Cincom Systems, concepteur et fournisseur de logiciels, aide depuis 
+      plus de 40 ans les entreprises et groupes de premier plan à simplifier 
+      leurs activités complexes et à transformer leur information 
+      d'entreprise en avantage concurrentiel. Cincom sert des milliers de 
+      clients sur les cinq continents, leur offrant des logiciels efficaces qui 
+      leur apportent un retour rapide sur investissement.
+    </p>
+  </fr>
+  <en>
+    <p><b>Deliver Every Application on Time and under Budget.</b></p>
+    <p>
+      Cincom Smalltalk is an object-oriented application development 
+      language for creating and maintaining portable, cross-platform 
+      business applications. Smalltalk helps you build applications quickly 
+      and efficiently – from client/server systems to highly scalable web 
+      applications.
+    </p>
+    <p>
+      Cincom Smalltalk's frameworks give you tactical and strategic 
+      advantages over the competition, helping you to develop software 
+      with unparalleled productivity and fast reaction time, so you deliver
+      every application on time and under budget.
+    </p>
+    <p>
+      Easy to learn and use, Cincom Smalltalk simplifies application 
+      development and helps you achieve value, savings and rapid ROI, 
+      all while minimizing risk.
+    </p>
+
+    <p><b>About Cincom</b><br />
+      Cincom delivers and supports innovative software and services that 
+      simplify complex business processes. Cincom specializes in the areas 
+      of business where simplification brings the greatest value for companies
+      that want to grow revenue, control cost, minimize risk and achieve rapid
+      ROI better than their competitors. For 40 years, Cincom has helped 
+      thousands of clients worldwide simplify the management of complex business 
+      processes.
+    </p>
+  </en>
+</t> 
+[% END %]
+
+[% WRAPPER sponsor
+img = 'logo.bookingcom.large.jpg'
+name = 'Booking.com B.V.'
+url = 'http://www.booking.com/jobs'
+lnk = 'bookingcom'
+%]
+<t>
+  <fr>
+<p>
+Booking.com B.V., une filiale de Priceline.com (Nasdaq: PCLN), possède 
+et opère Booking.com™, l’un des leaders mondiaux des agences de 
+réservations d’hôtels en ligne en nombre de nuitées réservées. 
+Notre site attire chaque mois via Internet plus de 30 millions de 
+visiteurs uniques émanant du marché mondial des voyageurs d’affaires 
+et de loisirs.
+</p>
+<p>
+Depuis 1996, Booking.com B.V. garantit les meilleurs tarifs pour 
+tout type d’établissement hôtelier, des petits hôtels indépendants 
+aux 5 étoiles luxueux, grâce à son site Booking.com. Le site Internet 
+Booking.com est disponible en 37 langues et propose plus de 100000 
+hôtels dans 89 pays.
+</p>
+<p>
+Booking.com B.V. a son siège à Amsterdam, aux Pays-Bas. Son activité 
+est soutenue au niveau mondial par des agences à : Amsterdam - Athènes 
+- Barcelone - Berlin - Buenos Aires - Cambridge - Le Cap - Dubaï - Dublin 
+- Grand Rapids - Istanbul - Londres - Loulé (PT) - Lyon - Madrid - Montréal 
+- Moscou - Munich - New York - Orlando - Paris - Rome - San Francisco - 
+São Paulo - Shanghai - Singapour - Stockholm - Sydney - Tokyo - Varsovie - 
+Vienne - Zurich.
+</p>
+<p>
+Booking.com recherche actuellement 13 développeurs&nbsp;! Venez nous rencontrer
+lors d'OSDC.fr 2013.
+</p>
+</fr>
+  <en>
+<p>
+Booking.com B.V., part of Priceline.com (Nasdaq:PCLN), owns and operates 
+Booking.com (TM), one of the world's leading online hotel reservations 
+agencies by room nights sold, attracting over 30 million unique visitors each 
+month via the Internet from both leisure and business markets worldwide. 
+</p>
+<p>
+Established in 1996, Booking.com B.V. guarantees the best prices for any 
+type of property, ranging from small independent hotels to a five star 
+luxury through Booking.com. The Booking.com website is available in 37 
+languages and offers over 100000 hotels in 89 countries.
+</p>
+<p>
+Booking.com B.V. is based in Amsterdam, the Netherlands, and is supported 
+internationally from offices in: Amsterdam - Athens - Barcelona - Berlin - 
+Buenos Aires - Cambridge - Cape Town - Dubai - Dublin - Grand Rapids - 
+Istanbul - London - Loulé (PT) - Lyon - Madrid - Montréal - Moscow - 
+Munich - New York - Orlando - Paris - Rome - San Francisco - São Paulo - 
+Shanghai - Singapore - Stockholm - Sydney - Tokyo - Vienna - Warsaw - Zürich.
+</p>
+<p>
+Booking.com is looking for 13 developers! Come and meet us at OSDC.fr 2013.
+</p>
+  </en>
+</t> 
+[% END %]
+
+[% WRAPPER sponsor
+img = 'logo.linkfluence.large.png'
+name = 'Linkfluence'
+url = 'http://www.linkfluence.net/'
+lnk = 'linkfluence'
+%]
+<t>
+  <fr>
+<p>
+Linkfluence (anciennement RTGI) est une entreprise française innovante,
+de nombreuses fois primée, qui développe des outils, des méthodes
+et des concepts permettant à ses clients de segmenter, analyser
+et cartographier le web social communauté par communauté.
+</p>
+<p>
+L’entreprise se compose de deux pôles étroitement imbriqués avec d’un côté
+les études qui produisent les livrables proposés par linkfluence et de l’autre
+l'ingénierie / design qui développe l’ensemble des outils nécessaires
+à la réalisation de ces produits (captation, traitement
+et représentation de données issues des différents espaces du web social)
+et en fixe la forme.
+</p>
+<p>
+L'équipe ingénierie, qui développe principalement en Perl, utilise le logiciel libre
+et y contribue régulièrement.
+</p>
+  </fr>
+  <en>
+<p>
+Linkfluence (formerly RTGI) is an innovative French company numerous award-winning.
+It develop tools, methods and concepts that enable its customers to segment, analyze
+and map the social web, community by community.
+</p>
+<p>
+The company consists of poles intertwined with one hand studies that produce
+the deliverables proposed by linkfluence and other engineering / design
+that develops all the tools to the achievement of these products
+(collection, treatment and representation of data from different areas
+of the social web) and fixed form.
+</p>
+<p>
+The engineering team, which develops mainly in Perl, uses free software
+and contributes regularly.
+</p>
+  </en>
+</t> 
+[% END %]
+
+
+<!-- <h2><t><fr>Fournisseur technologique</fr><en>Technology provider</en></t></h2> -->
+
+<h2><t><fr>Sponsors media</fr><en>Media sponsors</en></t></h2>
+
+[% WRAPPER sponsor
+  img = 'logo.oreilly.large.png'
+  nom = "O Reilly"
+  url = "http://www.oreillygmt.eu/"
+  lnk = 'O_Reilly'
+%]
+  <t>
+    <fr>Acteur reconnu de la communauté informaticienne, les 
+      <a title="Éditions O'Reilly" href="http://www.oreillygmt.eu/">
+Éditions O'Reilly</a></strong> prêtent une attention particulière 
+à la qualité de leurs publications tant du point de vue du sérieux de 
+leurs sources que de la conception de leurs ouvrages. Aujourd'hui, ce 
+sont plus de 500 livres en français et en anglais comptant parmi 
+diverses collections étudiées pour satisfaire tous les profils&nbsp;: 
+que vous soyez débutant, expérimenté ou spécialiste et selon vos besoins, 
+vous trouverez à coup sûr un animal O'Reilly pour vous guider&nbsp;! 
+    </fr>
+    <en>
+<a title="O'Reilly &amp; Associates" href="http://www.oreilly.com/" 
+>O'Reilly &amp; Associates</a></strong> is the premier information 
+source for leading-edge computer technologies. The company's books, 
+conferences, and web sites bring to light the knowledge of technology 
+innovators. O'Reilly books, known for the animals on their covers, 
+occupy a treasured place on the shelves of the developers building 
+the next generation of software. 
+    </en>
+  </t> 
+[% END %]
+
+[% WRAPPER sponsor
+img = 'logo.linuxmag.large.png'
+name = 'Linux Magazine'
+url = 'http://www.gnulinuxmag.com/'
+lnk = 'linuxmagazine'
+%]
+<t>
+  <fr>
+    Linux Magazine France, le magazine francais 100% GNU/Linux.
+    Tous les mois l'actualité du logiciel libre, des reportages
+    ou interviews, des articles techniques concernant l'administration
+    système et réseau, le développement, le graphisme...
+    et <a href="http://articles.mongueurs.net/magazines/">Perl</a>.
+    La référence technique dans le monde Linux&nbsp;!
+  </fr>
+  <en>
+    Linux Magazine France, the French magazine 100% GNU/Linux.
+    Each month providing the news of the Free Software world, reports and
+    interviews, technical articles concerning system and network
+    administration, development, graphics...
+    and <a href="http://articles.mongueurs.net/magazines/">Perl</a>.
+    The technical reference of the French Linux world!
+  </en>
+</t> 
+[% END %]
+
+
+[% END %]
